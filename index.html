@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты</title>
+    <style>
+        /* Стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding-bottom: 50px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #3e9fba 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            list-style: none;
+        }
+        header ul li {
+            display: inline;
+            padding: 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #3e9fba;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        /* Стили для проектов */
+        .project {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: #3e9fba 4px solid;
+
+            overflow: hidden;
+            border-radius: 10px; /* Скругление углов */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Тень */
+            transition: all 0.5s ease; /* Плавное раскрытие */
+        }
+        .project h2 {
+            margin-bottom: 5px;
+        }
+        .project p {
+            transition: max-height 0.5s ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .project:hover p {
+            max-height: 100px; /* Максимальная высота при наведении */
+        }    
+        .project a {
+            text-decoration: none;
+            color: #333;
+        }
+        .project a:hover {
+            color: #3e9fba;
+        }
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .footer a {
+            color: #3e9fba;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Проекты</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Главная</a></li>
+                    <!-- Ссылка на ваш GitHub -->
+                    <li><a href="https://github.com/danyakr" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Проект 1 -->
+        <div class="project">
+            <h2>Генерации и визуализация фрактальных изображений с использованием систем Линденмайера</h2>
+            <p>Программа на Python, которая позволяет отрисовывать фракталы (детерминированные и стохастические). В меню можно выбрать как уже предварительно разработанные системы, так и описать свои. Рассмотрены простейшие фракталы, более сложные, с внесением изменений в изначальную систему, деревья или ветвящиеся фракталы, а также привен стохастический ветвящийся фрактал, имитирующий природную форму дерева.</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/danyakr/fractal-visualization-using-L-systems">ссылка на проект</a></p>
+        </div>
+
+        <!-- Проект 2 -->
+        <div class="project">
+            <h2>Реализация методов Гаусса</h2>
+            <p>Проект посвящен реализации методов Гаусса для решения систем линейных уравнений, включая метод последовательного исключения по столбцам, оптимальный метод Гаусса для исключения неизвестных и метод Гаусса-Жордана. Представлены две версии каждого алгоритма: на стандартных списках Python и на списках с индексацией от 1 для удобства работы с матрицами.</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/danyakr/implementation_of_the_Gauss_method">ссылка на проект</a></p>
+        </div>
+
+        <!-- Проект 3 -->
+        <div class="project">
+            <h2>Численные методы</h2>
+            <p>Репозиторий содержит инструменты для расчета интегралов и решения дифференциальных уравнений. Включает методы прямоугольников, трапеций и Симпсона с возможностью выбора шага, а также алгоритмы для вычисления с заданной точностью. Предоставляет методы Эйлера и Рунге-Кутта для решения дифференциальных уравнений разных порядков и систем, а также приближенные методы для систем нелинейных уравнений и функции для вычисления элементарных функций.</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/danyakr/numerical_methods">ссылка на проект</a></p>
+        </div>
+
+        <!-- Проект 4 -->
+        <div class="project">
+            <h2>Интерполяция</h2>
+            <p>Репозиторий включает инструменты для вычисления промежуточных значений функций, используя полиномы Лагранжа, Ньютона и Стерлинга, с возможностями визуализации данных.</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/danyakr/interpolation_techniques">ссылка на проект</a></p>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>Красников Даниил &copy; 2024</p>
+    </footer>
+</body>
+</html>
