@@ -16,7 +16,28 @@
             background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
+            background: linear-gradient(-45deg, #00797B, #005F5F, #204040, #212121, #1A1A1A);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
         }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            25% {
+                background-position: 100% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            75% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }        
         .container {
             width: 80%;
             margin: auto;
@@ -29,6 +50,7 @@
             padding-top: 30px;
             min-height: 70px;
             border-bottom: #3e9fba 3px solid;
+            background: linear-gradient(to right, #222, #333); /* Градиент для заголовка */
         }
         header a {
             color: #fff;
@@ -100,6 +122,7 @@
             left: 0;
             bottom: 0;
             width: 100%;
+            background: linear-gradient(to right, #333, #111);
         }
         .footer p {
             margin: 0;
@@ -119,7 +142,6 @@
             <nav>
                 <ul>
                     <li class="current"><a href="index.html">Главная</a></li>
-                    <!-- Ссылка на ваш GitHub -->
                     <li><a href="https://github.com/danyakr" target="_blank">GitHub</a></li>
                 </ul>
             </nav>
